@@ -41,7 +41,7 @@
  
 // SETUP //
  
-int speakerOut = 9;    // Set up speaker on digital pin 7
+int speakerOut = 10;    // Set up speaker on digital pin 7
 int potPin = A0;      // Set up potentiometer on analogue pin 0.
  
  
@@ -56,8 +56,8 @@ void setup() {
 //  which sets each note's relative length (higher #, longer note) 
  
 // Melody 1: Star Wars Imperial March
-int melody1[] = {  a4, R,  a4, R,  a4, R,  f4, R, c5, R,  a4, R,  f4, R, c5, R, a4, R,  e5, R,  e5, R,  e5, R,  f5, R, c5, R,  g5, R,  f5, R,  c5, R, a4, R};
-int beats1[]  = {  50, 20, 50, 20, 50, 20, 40, 5, 20, 5,  60, 10, 40, 5, 20, 5, 60, 80, 50, 20, 50, 20, 50, 20, 40, 5, 20, 5,  60, 10, 40, 5,  20, 5, 60, 40};
+int melody1[] = {  f4,  f4, f4,  a4s,   f5,  d5s,  d5,  c5, a5s, f5, d5s,  d5,  c5, a5s, f5, d5s, d5, d5s,   c5};
+int beats1[]  = {  21,  21, 21,  128,  128,   21,  21,  21, 128, 64,  21,  21,  21, 128, 64,  21, 21,  21, 128};
  
 // Melody 2: Star Wars Theme
 int melody2[] = {  f4,  f4, f4,  a4s,   f5,  d5s,  d5,  c5, a5s, f5, d5s,  d5,  c5, a5s, f5, d5s, d5, d5s,   c5};
